@@ -1,12 +1,12 @@
 # Uncover performance problems
 
-Purpose of this example is to showcase the optimization opportunities offered by full blown Spock testing as opposed to just stubbing interactions. Take a close look at
+The purpose of this example is to showcase the optimization opportunities offered by full blown Spock testing as opposed to just stubbing interactions. Take a close look at
 
     then:
         1 * pizzaEater2.pizzaBankService.retrieve() >> pizza
 
 
-This can incur a very pricey performance cost. Imagine that it happens two times as in the code (we shaved one variable and made our application infinite times  slower). Here we can identify an opportunity of replacing
+This can incur a very pricey performance cost. Imagine that it happens two times as in the code (we shaved one variable and made our application twice slower). Here we can identify an opportunity of replacing
 
     Gratitude gratitude = gratitudeService.expressGratitude(pizzaBankService.retrieve());
     stomachService.eatPizza(pizzaBankService.retrieve());

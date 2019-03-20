@@ -23,14 +23,14 @@ Take a look in the defered execution
 
 what happens in __doLater__  is invisible. Someone can hide everything there and the test can work ok. You can either explode an atomic bomb there. No one will ever notice.
 
-The code is not fully tests, but testing thoroughly calls for some advanced and useful Groovy knowledge. 
+The code is not fully tested, but testing thoroughly calls for some advanced and useful Groovy knowledge. 
 
-1. The content of the clojure becaomes a full blown method
-2. The method can be tested
-3. The __doLater__ calls a curried version of the method
-4. Now we know what __doLater__ calls
+1. The content of the clojure becomes a full blown method, consequently the method can be tested.
+2. The __doLater__ calls a curried version of the method, consequently we know what __doLater__ calls
 
 These two scenarios reveal all the truth (And some advanced Groovy knowledge)
 
     def 'Deferred pizza eating is fully tested'
     def 'Pizza eater eats a pizza fully tested'
+
+Doing Spock testing is not a blind step generation, it gives you feedback on the testability of the code and makes you a Groovy maestro.

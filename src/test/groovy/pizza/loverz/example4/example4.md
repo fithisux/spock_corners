@@ -26,11 +26,11 @@ The second scenario is this example passes because it eradicates the commutativi
   
     when: 
 
-then big sequence of thens
+the big sequence of thens
 
     then:
 
-to impose commutatitivity restrictions. By checking the wording of the steps, to understand our logigal fallacy.
+to impose commutatitivity restrictions. By checking the wording of the steps, we can understand our logical fallacy.
  
 Being cautious and not throw-away the non-commutativity can work miracles. Having proper step descriptions telling a human comprehensible story is vital too.
 
@@ -52,6 +52,6 @@ with
         1 * pizzaEater4.packageService.packagePizza(pizza)
         
     then: 'I eat the pizza'
-                1 * pizzaEater4.stomachService.eatPizza(pizza)
+        1 * pizzaEater4.stomachService.eatPizza(pizza)
                 
-Now , the test fails and we can save the ssnity of the universe &#128521; !
+Now , the test fails and we can save the sanity of the universe &#128521; !

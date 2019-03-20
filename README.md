@@ -3,7 +3,7 @@
 
 _Disclaimer: This is not exclusively my knwoledge, but I record observations that were acquired slowly as Thanos Papapetrou, our team tech lead introduced this method_
 
-In these short examples we try to point out the advantages of fully testing in Spock, with no compromises instead of partially testing. We use spock tests because the code in question is Java.
+In these short examples we try to point out the advantages of fully Java code testing in [Spock](http://spockframework.org/), with no compromises. We test fully instead of testing partially.
 
 We observed that fully testing is an expensive task. However there is a gain that pays out the investment.
 
@@ -11,7 +11,7 @@ We observed that fully testing is an expensive task. However there is a gain tha
 2. Refactorings are safe
 3. Post release modifications have higher probability to be caught
 4. Classes are kept in reasonable length
-5. When possible we test in ful and not with sampled examples
+5. When possible we test in full and not with sampled examples
 6. Performance problems can be uncovered.
 7. Advanced knowledge of Groovy is encouraged
 

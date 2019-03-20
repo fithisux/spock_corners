@@ -5,11 +5,15 @@ Moreover we have a reusable piece of code that makes sense and make uncle Bob pr
 
     Thou shalt not forgot to use the refactored method!
 
-It happens to everyone, it is very common. Unfortunately it is also very common to not test properly. Scenarios 2,3,4 pass because it is the same test that tests partially the old, the intended and the unintended consequences of the transformation.
+It happens to everyone, it is very common. Unfortunately it is also very common to not test properly. Scenarios 2,3,4 pass because it is the same test that tests partially 
 
-However, by doing the refactor against the scenario 1 that tests fully can catch easily the problem. As a matter of fact the morale is
+1. the old behavior
+2. the intended behavior
+3. and guess what ... the unintended behavior
+
+The unintended behavior is a consequence of the transformation. However, by doing the refactor against the scenario 1 that tests fully, we can catch easily the problem. As a matter of fact the morale is
 
 
-    Thou shalt refactor against full tests and (normally) be invariant agains them!
+    Thou shalt refactor against full tests and (normally) be invariant against them!
     
 Full testing saved the day again!
